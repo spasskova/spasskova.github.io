@@ -1,0 +1,123 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+}
+
+.page {
+    min-height: 100vh;
+    height: 100%;
+}
+
+.page__main,
+.page__photo{
+    width: 50%;
+    float: left;
+    height: 100%;
+}
+
+.page__photo {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url("../img/cv_photo.jpg");
+    background-size: cover;
+    background-position: top center;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.page__main {
+    padding: 30px 10px;
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+.overview {
+    text-align: center;
+    border-bottom: 2px solid rgba(0, 9, 114, 0.88);
+}
+
+.overview__post,
+.overview__name {
+    font-size: 30px;
+    color: rgba(0,0,0,0.7);
+    margin: 0;
+}
+
+.overview__name {
+    font-size: 26px;
+    margin: 10px 0;
+}
+
+.social {
+    text-align: center;
+    margin: 15px 0;
+}
+
+.social__item {
+    display: inline-block;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background: #000;
+    color: #fff;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 10px 0;
+    transition: background 0.2s ease-in-out;
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+.social__item:hover {
+    background: rgba(0, 9, 114,0.7);
+}
+
+.social__item:last-child {
+    margin-right: 0;
+}
+
+.subtitle {
+    font-size: 20px;
+    color: rgba(0,0,0,0.8);
+}
+
+.subtitle span {
+    border-bottom: 2px solid rgba(0, 9, 114, 0.88);
+}
+
+.text {
+    font-size: 16px;
+    line-height: 26px;
+}
+
+@media screen and (max-width: 768px) {
+
+    .page__main,
+    .page__photo{
+        float: none;
+        height: auto;
+        width: 100%;
+    }
+    .page__photo {
+        height: 350px;
+    }
+    .overview__post,
+    .overview__name {
+        font-size: 25px;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+
+    .page__photo {
+        height: 230px;
+    }
+    
+}
